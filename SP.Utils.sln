@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedMetadataImporter", "ManagedMetadataImporter\ManagedMetadataImporter.csproj", "{3255FFD8-E6A9-4850-942A-872CA6A47B9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.Utils", "SP.Utils\SP.Utils.csproj", "{4E067863-E09C-4028-AC46-1DE99D1A5EAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3255FFD8-E6A9-4850-942A-872CA6A47B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3255FFD8-E6A9-4850-942A-872CA6A47B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3255FFD8-E6A9-4850-942A-872CA6A47B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3255FFD8-E6A9-4850-942A-872CA6A47B9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E067863-E09C-4028-AC46-1DE99D1A5EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E067863-E09C-4028-AC46-1DE99D1A5EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E067863-E09C-4028-AC46-1DE99D1A5EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E067863-E09C-4028-AC46-1DE99D1A5EAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

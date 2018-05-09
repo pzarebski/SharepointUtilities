@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SharepointUtilities")]
+[assembly: AssemblyTitle("SP.Utils")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SharepointUtilities")]
+[assembly: AssemblyProduct("SP.Utils")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3255ffd8-e6a9-4850-942a-872ca6a47b9c")]
+[assembly: Guid("4e067863-e09c-4028-ac46-1de99d1a5eaa")]
 
 // Version information for an assembly consists of the following four values:
 //
