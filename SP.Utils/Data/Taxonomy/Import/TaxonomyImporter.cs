@@ -72,12 +72,29 @@ namespace SP.Utils.Data.Taxonomy.Import
             return CreateStructureForTermSet(oStore, termSetName, lcid);
         }
 
+        public bool ImportEnum<T>(SPSite site, string termSetName, int lcid = 1045) where T : struct, IConvertible
+        {
+            StringCollection terms = EnumExtensions.GetBoundEnumCollection<T>();
+            string[] arr = new string[terms.Count];
+            terms.CopyTo(arr, 0);
+            return ImportList(site, arr, termSetName, lcid);
+        }
+
         public bool ImportEnum<T>(TermStore oStore, string termSetName, int lcid = 1045) where T : struct, IConvertible
         {
             StringCollection terms = EnumExtensions.GetBoundEnumCollection<T>();
             string[] arr = new string[terms.Count];
             terms.CopyTo(arr, 0);
             return ImportList(oStore, arr, termSetName, lcid);
+        }
+
+        public bool ImportList<T>(SPSite site, IEnumerable<T> terms, string termSetName, int lcid = 1045)
+        {
+            var parser = CollectionParser<T>.Create();
+            var result = parser.Parse(terms);
+            AddToCache(result, termSetName);
+
+            return CreateStructureForTermSet(site, termSetName, lcid);
         }
 
         public bool ImportList<T>(TermStore oStore, IEnumerable<T> terms, string termSetName, int lcid = 1045)
